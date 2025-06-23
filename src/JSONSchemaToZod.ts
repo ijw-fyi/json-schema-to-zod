@@ -1,4 +1,5 @@
-import { z, ZodSchema, type ZodTypeAny } from 'zod';
+import { z } from 'zod';
+import type { ZodSchema, ZodTypeAny } from 'zod';
 import { type JSONSchema, type JSONValue, type JSONObject } from './Type';
 
 export class JSONSchemaToZod
@@ -747,7 +748,7 @@ export class JSONSchemaToZod
 		const elseSchema = schema['else'];
 
 		// Apply conditional validation using superRefine
-		return zodObject.superRefine((data, ctx) =>
+		return zodObject.superRefine((data: JSONSchema, ctx) =>
 		{
 			// Apply default values to data for condition checking
 			const dataWithDefaults = this.applyDefaultValues(data, schema);

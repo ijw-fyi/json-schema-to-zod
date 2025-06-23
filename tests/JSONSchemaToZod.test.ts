@@ -69,7 +69,7 @@ describe('JSONSchemaToZod', () =>
 		const jsonSchema = { type: 'string', enum: ['Alice', 'Bob'] };
 		const zodSchema = JSONSchemaToZod.convert(jsonSchema);
 
-		expect(zodSchema).toBeInstanceOf(z.ZodEffects);
+		expect(zodSchema).toBeInstanceOf(z.ZodString);
 		expect(() => zodSchema.parse('Alice')).not.toThrow();
 		expect(() => zodSchema.parse('Charlie')).toThrow(ZodError);
 	});

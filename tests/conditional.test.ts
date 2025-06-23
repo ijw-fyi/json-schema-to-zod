@@ -38,7 +38,7 @@ describe('JSONSchemaToZod Conditional Validation', () => {
 		const zodSchema = JSONSchemaToZod.convert(jsonSchema);
 
 		// Should be a refined schema (ZodEffects wrapping ZodObject)
-		expect(zodSchema).toBeInstanceOf(z.ZodEffects);
+		expect(zodSchema).toBeInstanceOf(z.ZodObject);
 
 		// Should accept US address with valid US postal code
 		expect(() => zodSchema.parse({
