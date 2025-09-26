@@ -1,7 +1,7 @@
 {
 	"name": "@dmitryrechkin/json-schema-to-zod",
 	"type": "module",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
@@ -26,6 +26,6 @@
 		"vitest": "^0.24.5"
 	},
 	"dependencies": {
-		"zod": "^4.0.0-beta.20250505T195954"
+		"zod": "^4.0.0"
 	}
 }
