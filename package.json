@@ -23,7 +23,7 @@
 		"tsconfig-paths": "^4.2.0",
 		"typescript": "^5.5.3",
 		"vite": "^6.2.1",
-		"vitest": "^0.24.5"
+		"vitest": "^4.1.11"
 	},
 	"dependencies": {
 		"zod": "^4.0.0"
